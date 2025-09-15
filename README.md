@@ -1,5 +1,7 @@
 Esercizio
 ===
+PT I:
+
 Modellizzare la struttura di un database per memorizzare tutti i dati riguardanti una università:
 
   sono presenti diversi Dipartimenti (es.: Lettere e Filosofia, Matematica, Ingegneria ecc.);
@@ -15,3 +17,25 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 
   Utilizzare https://www.drawio.com/ per la creazione dello schema.
   Esportare quindi il diagramma in jpg e caricarlo nella repo.
+
+===
+PT II:
+
+Dopo aver creato un nuovo database nel vostro MySQL Workbench e aver importato lo schema allegato, eseguite le query del file allegato.
+
+Cosa consegnare?
+  Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file txt e caricatelo nella vostra repo.
+
+Guida all’installazione
+
+  Installazione SQL e MySQL Workbench (Windows)
+  Scarichiamo il https://dev.mysql.com/downloads/installer/ e gestiamo tutto col Wizard.
+  Scegliamo la versione Full installando anche MySQL Workbench e MySQL Shell,
+  Impostiamo l’avvio di MySQL all’avvio del PC,
+  Impostiamo una password per l’utente root,
+
+  Installazione SQL MySQL Workbench (Mac)
+  Scarichiamo il bundle DMG per macOS dalla pagina MySQL ufficiale .
+  Lanciamo anche lì l’installer e facciamo il setup,
+  Impostiamo una password per l’utente root (richiede almeno 8 lettere),
+  Scarichiamo anche MySQL Workbench https://dev.mysql.com/downloads/workbench/
