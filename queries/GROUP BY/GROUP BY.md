@@ -2,7 +2,7 @@ Esercizio GROUP BY
 ===
 1. Contare quanti iscritti ci sono stati ogni anno
 
-  SELECT COUNT(*) as `numero_iscritti`, `enrolment_date`
+  SELECT COUNT(*) as `students_enroled`, `enrolment_date`
   FROM `students`
   GROUP BY YEAR(`enrolment_date`);
 
