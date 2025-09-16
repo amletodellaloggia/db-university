@@ -67,3 +67,14 @@ filtrare i tentativi con voto minimo 18.
   JOIN `courses` ON `exams`.`course_id` = `courses`.`id`
   GROUP BY `students`.`id`, `courses`.`id`
   ORDER BY `students`.`id`, `courses`.`id`;
+
+  <!-- Numero tentativi con voto minimo 18 -->
+
+  SELECT `students`.`name` AS "Nome", `students`.`surname` AS "Cognome", `courses`.`name` AS "Nome Esame", COUNT(`exam_student`.`vote`) AS "Numero Tentativi", MAX(`exam_student`.`vote`) AS "Voto Massimo"
+  FROM `students`
+  JOIN `exam_student` ON `exam_student`.`student_id` = `students`.`id`
+  JOIN `exams` ON `exam_student`.`exam_id` = `exams`.`id`
+  JOIN `courses` ON `exams`.`course_id` = `courses`.`id`
+  WHERE `exam_student`.`vote` >= 18
+  GROUP BY `students`.`id`, `courses`.`id`
+  ORDER BY `students`.`id`, `courses`.`id`;
