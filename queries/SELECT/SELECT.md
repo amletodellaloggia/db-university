@@ -52,11 +52,11 @@ WHERE YEAR(`date_of_birth`) <= YEAR(CURDATE()) - 30;
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
-  SELECT `name`
+  SELECT COUNT(*) AS `number_of_departments`
   FROM `departments`
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
-  SELECT `name`, `surname`, `phone`
+  SELECT COUNT(*) AS `no_phone_teachers`
   FROM `teachers`
   WHERE `phone` IS NULL
